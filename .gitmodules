@@ -1,0 +1,3 @@
+[submodule "arduino/libraries/BMP180_Software"]
+	path = arduino/libraries/BMP180_Software
+	url = https://github.com/sharst/BMP180_Software
