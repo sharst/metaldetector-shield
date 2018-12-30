@@ -1,3 +1,6 @@
 [submodule "arduino/libraries/BMP180_Software"]
 	path = arduino/libraries/BMP180_Software
 	url = https://github.com/sharst/BMP180_Software
+[submodule "arduino/libraries/SoftI2CMaster"]
+	path = arduino/libraries/SoftI2CMaster
+	url = https://github.com/felias-fogg/SoftI2CMaster
