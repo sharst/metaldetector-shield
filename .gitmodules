@@ -7,3 +7,6 @@
 [submodule "arduino/libraries/MCP_CAN_lib"]
 	path = arduino/libraries/MCP_CAN_lib
 	url = https://github.com/coryjfowler/MCP_CAN_lib
+[submodule "PythonLivePlotting"]
+	path = PythonLivePlotting
+	url = https://github.com/sharst/PythonLivePlotting
