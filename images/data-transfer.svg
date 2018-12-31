@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="467.0415mm"
+   height="285.8421mm"
+   viewBox="0 0 1654.8715 1012.8263"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="data-transfer.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4177"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Send"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4159"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4777"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4779"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4153"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4177-5"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send-4-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4177-5-6"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send-4-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4177-5-63"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send-4-0-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4177-5-63-6"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="710.55419"
+     inkscape:cy="675.00774"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1918"
+     inkscape:window-height="1042"
+     inkscape:window-x="1920"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.8500018,89.456993)">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.30000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4477-5"
+       width="475.71429"
+       height="421.42856"
+       x="587.85718"
+       y="-9.0663671" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.30000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4477"
+       width="475.71429"
+       height="421.42856"
+       x="8.5714283"
+       y="-9.0663671" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 53.538085,54.33149 0,237.38585 366.685375,0"
+       id="path4136"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:6.30000019;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 54.548237,73.524388 63.639613,3.030458 c 0,0 13.13198,31.314724 42.4264,56.568544 29.29443,25.25381 38.3858,71.72083 102.02541,94.95434 63.63961,23.23351 136.3706,52.52793 155.56349,53.53808"
+       id="path4138"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="30.418415"
+       y="36.779182"
+       id="text4426"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4428"
+         x="30.418415"
+         y="36.779182">coil response</tspan><tspan
+         sodipodi:role="line"
+         x="30.418415"
+         y="86.779182"
+         id="tspan4430"
+         style="font-size:15px" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="77.781746"
+       y="346.26559"
+       id="text4432"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4434"
+         x="77.781746"
+         y="346.26559" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4436"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4438"><rect
+           id="rect4440"
+           width="508.57144"
+           height="342.85715"
+           x="134.28572"
+           y="415.21936" /></flowRegion><flowPara
+         id="flowPara4442"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4444"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-30,-81.428571)"><flowRegion
+         id="flowRegion4446"><rect
+           id="rect4448"
+           width="408.57144"
+           height="385.71429"
+           x="82.85714"
+           y="398.07648" /></flowRegion><flowPara
+         id="flowPara4450"
+         style="font-size:17.5px">The response of the coil is measured for N samples after trigger. We do this for each coil in turn.</flowPara><flowPara
+         id="flowPara4452"
+         style="font-size:17.5px">N = ADC_SAMPLES in CoilLib.h</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="624.07367"
+       y="34.122932"
+       id="text4426-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="624.07367"
+         y="34.122932"
+         id="tspan4430-7"
+         style="font-size:40px">sum up + average</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4444-3"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(543.12071,-323.30487)"><flowRegion
+         id="flowRegion4446-5"><rect
+           id="rect4448-6"
+           width="408.57144"
+           height="385.71429"
+           x="82.85714"
+           y="398.07648" /></flowRegion><flowPara
+         id="flowPara4452-9"
+         style="font-size:17.5px">We trigger and record the coil M times. With each trigger, we sum up all the ADC values. We then take the average value over the M sample series.</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4523" /><flowPara
+         style="font-size:17.5px"
+         id="flowPara4525">M = COIL_SAMPLES in CoilLib.h</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.30000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4477-5-1"
+       width="475.71429"
+       height="421.42856"
+       x="1176.4286"
+       y="-9.0663671" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1217.0564"
+       y="40.656136"
+       id="text4426-3-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1217.0564"
+         y="40.656136"
+         id="tspan4430-7-7"
+         style="font-size:40px">Publish on CAN</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4444-3-0"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(1134.516,-323.30487)"><flowRegion
+         id="flowRegion4446-5-9"><rect
+           id="rect4448-6-3"
+           width="408.57144"
+           height="385.71429"
+           x="82.85714"
+           y="398.07648" /></flowRegion><flowPara
+         style="font-size:17.5px"
+         id="flowPara4525-6">We publish a message to the CAN bus.</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4595">One message always encodes the values of two coils. Each coil value is a 16-bit int. The message is defined as:</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4597">[COIL_REGISTER, highbyte(val1), lowbyte(val1), highbyte(val2), lowbyte(val2)]</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4599" /><flowPara
+         style="font-size:17.5px"
+         id="flowPara4601">The COIL_REGISTER identifies which coils the two values belong to.</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.30000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4477-5-1-2"
+       width="475.71429"
+       height="421.42856"
+       x="1177.8572"
+       y="498.79077" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1205.718"
+       y="560.33569"
+       id="text4426-3-2-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="1205.718"
+         y="560.33569"
+         id="tspan4430-7-7-1"
+         style="font-size:40px">Receive in linux-can</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4444-3-0-8"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(1123.1776,192.04858)"><flowRegion
+         id="flowRegion4446-5-9-7"><rect
+           id="rect4448-6-3-9"
+           width="408.57144"
+           height="385.71429"
+           x="82.85714"
+           y="398.07648" /></flowRegion><flowPara
+         style="font-size:17.5px"
+         id="flowPara4601-7">The message is transmitted on the CAN-bus to a CAN-to-USB receiver. </flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4674">The CAN messages are published via the can-utils on a linux-can device (slcan0)</flowPara></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.30000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4477-5-1-2-5"
+       width="475.71429"
+       height="421.42856"
+       x="586.42859"
+       y="498.79077" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="614.28937"
+       y="556.45874"
+       id="text4426-3-2-6-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="614.28937"
+         y="556.45874"
+         id="tspan4430-7-7-1-2"
+         style="font-size:40px">Bridge to ROS</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4444-3-0-8-2"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(531.74899,192.04858)"><flowRegion
+         id="flowRegion4446-5-9-7-8"><rect
+           id="rect4448-6-3-9-9"
+           width="408.57144"
+           height="385.71429"
+           x="82.85714"
+           y="398.07648" /></flowRegion><flowPara
+         style="font-size:17.5px"
+         id="flowPara4674-3">The canbridge from the metaldetector_ros package unpacks the CAN messages and publishes them on topics. </flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4716">The topic names are defined in metaldetector_ros/config.</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4718">The canbridge will strip the COIL_REGISTER from the message and intepret and publish the remaining bytes as one INT32.</flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4714" /></flowRoot>    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:6.30000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4477-5-1-2-5-6"
+       width="475.71429"
+       height="421.42856"
+       x="5.0000019"
+       y="498.79077" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="32.860783"
+       y="560.33569"
+       id="text4426-3-2-6-9-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="32.860783"
+         y="560.33569"
+         id="tspan4430-7-7-1-2-2"
+         style="font-size:40px">Metalnode</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4444-3-0-8-2-9"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-49.679603,192.04858)"><flowRegion
+         id="flowRegion4446-5-9-7-8-3"><rect
+           id="rect4448-6-3-9-9-1"
+           width="408.57144"
+           height="385.71429"
+           x="82.85714"
+           y="398.07648" /></flowRegion><flowPara
+         style="font-size:17.5px"
+         id="flowPara4714-8">The metalnode from the metaldetector_ros package parses the messages from the canbridge and separates them into single values again. </flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4771">They are published on the topic </flowPara><flowPara
+         style="font-size:17.5px"
+         id="flowPara4773">/metal_detector.</flowPara></flowRoot>    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:38.80221939;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send)"
+       d="m 459,298.98759 135.04111,0"
+       id="path4775"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:37.51589966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-4)"
+       d="m 1028.4414,298.98141 127.5709,0"
+       id="path4775-0"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:37.51589966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-4-3)"
+       d="m 1410.0204,315.89984 0,127.5709"
+       id="path4775-0-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:37.51589966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-4-0)"
+       d="m 1199.5201,816.82815 -127.571,0"
+       id="path4775-0-2"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:37.51589966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send-4-0-0)"
+       d="m 608.05084,816.82815 -127.571,0"
+       id="path4775-0-2-1"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="25.714289"
+       y="-59.066368"
+       id="text9668"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan9670"
+         x="25.714289"
+         y="-59.066368"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">Data transfer of the metaldetector-shield</tspan></text>
+  </g>
+</svg>
