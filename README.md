@@ -118,3 +118,7 @@ Check out the loop-function in the main sketch. A loop consists of the following
 * In addition, you need one termination resistor somewhere on the bus, typically on the last element of the bus chain. If this last element is a metaldetector board, you can simply set jumper J4 to enable the termination resistor.
 * Connect the USBTin to your computer, open the interface and set it to 500kbps and see the messages from the board coming in. 
 * There is also a ROS driver available which directly interfaces the metaldetector-board to ROS messages [www.github.com/sharst/metaldetector-ros](www.github.com/sharst/metaldetector-ros)
+
+## Summary: Information flow from the metaldetector-shield
+![Information flow from the metaldetector-shield](https://github.com/sharst/metaldetector-shield/blob/master/images/data-transfer.png)
+
