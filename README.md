@@ -8,7 +8,7 @@ This shield was used in a robotics project for contactless navigation (see https
 * 24V connection with on-board conversion to 5V for the microcontroller
 * on-board CAN-Controller to connect the board to a CAN-bus
 * chaining possibility to connect two or more boards together for infinite extension
-* a ROS driver to use it in your robotics application: [www.github.com/sharst/metaldetector-ros](www.github.com/sharst/metaldetector-ros)
+* a ROS driver to use it in your robotics application: [www.github.com/sharst/metaldetector-ros](https://github.com/sharst/metaldetector-ros)
 
 ## What you can do with it:
 * Contactlessly detect metal objects in the vicinity (distance depends on the coil and object used)
