@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name Own_Components)(type KiCad)(uri ${KIPRJMOD}/../kicad_libraries/ownprints.pretty)(options "")(descr ""))
+  (lib (name w_conn_strip)(type KiCad)(uri ${KIPRJMOD}/../kicad_libraries/w_conn_strip.pretty)(options "")(descr ""))
+  (lib (name schraubklemmen)(type KiCad)(uri ${KIPRJMOD}/../kicad_libraries/w_conn_mkds.pretty)(options "")(descr ""))
+  (lib (name w_conn_jst)(type Legacy)(uri ${KIPRJMOD}/../kicad_libraries/w_conn_jst-ph.mod)(options "")(descr ""))
+)
