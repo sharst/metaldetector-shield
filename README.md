@@ -18,6 +18,8 @@ This shield was used in a robotics project for contactless navigation (see https
 The board and all accompanying software is fully open source, so you can get involved, too!
 
 ## Hardware setup
+![The metaldetector shield](https://github.com/sharst/metaldetector-shield/blob/master/images/metaldetector-shield-v2.3-with-coil.jpeg)
+
 This is what needs to be done to get one board running (no chaining):
 * Solder at least one sensing coil to the COIL_GND and COIL_1 inputs (for more information, check out --> "A note on the coils"
 * (Optionally) connect one BMP180-pressure sensor to one of the pressure inputs
@@ -51,5 +53,5 @@ The coils are key when it comes to which objects can be detected. Here's a few n
 
 ### A note on the pressure sensors
 * We ordered the BMP180 sensors on ebay. Note that there are several versions. The boards we used are 1cm x 1.2cm in size. We hand-crimped the cables to connect them via the JST-plugs.
-* If you want to use pressure sensors in an outdoor environment, water resistance is key. We used two cable glands connected together to create an air- and water-tight case. We connected an air tube from the one side which guided the air impulse from the bumper cushion into the case. On the other end we connected the air pressure sensor. (XXX --> See image here)
-* For extra water resistance, it is possible to put the pressure sensor into a ballon before inserting it into the cable gland. (XXX --> See image here).
+* If you want to use pressure sensors in an outdoor environment, water resistance is key. We used two cable glands connected together to create an air- and water-tight case. We connected an air tube from the one side which guided the air impulse from the bumper cushion into the case (blue arrow). On the other end we connected the air pressure sensor (red arrow). [See image here.](https://github.com/sharst/metaldetector-shield/blob/master/images/air_pressure_connector.jpg).
+* For extra water resistance, it is possible to put the pressure sensor into a ballon before inserting it into the cable gland. [See image here.](https://github.com/sharst/metaldetector-shield/blob/master/images/air_pressure_connector_balloon.jpeg)
