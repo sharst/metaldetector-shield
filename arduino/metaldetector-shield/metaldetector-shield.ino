@@ -34,7 +34,6 @@
 // Output raw ADC values of one coil, -1 to switch off
 #define DEBUG_RAW_ADC_COIL        0
 
-#define CAN_REG_ENABLE_COILS      8
 
 // Define a switchable debug print function
 #ifdef DEBUG
@@ -210,7 +209,7 @@ void handle_request() {
   unsigned char flash_data[32];
 
   if (is_write) {
-    if (reg == CAN_REG_ENABLE_COILS) {
+    if (reg == ENABLE_COILS_REGISTER) {
       DEBUG_PRINT("Received request to switch coils to: ");
       DEBUG_PRINTLN(rx_can_msg[4]);
       coils_enabled = (rx_can_msg[4] & 1) == 1;

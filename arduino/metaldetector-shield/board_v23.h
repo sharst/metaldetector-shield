@@ -18,7 +18,8 @@ static const byte IS_MASTER = 2;  // 0: NO master, 1: IS master, 2: read out har
 #define can_cs               9
 #define PRESSURE_REGISTER    25
 #define HEARTBEAT_REGISTER   30
-#define HEARTBEAT_EVERY      10000
+#define ENABLE_COILS_REGISTER 8
+#define HEARTBEAT_EVERY      10000 // How often to send out heartbeat messages
 
 // Chaining settings
 #define comm_in              A1
