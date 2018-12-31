@@ -1,6 +1,7 @@
 # metaldetector-shield
 Hardware and Software for a custom built metaldetector + pressure sensing shield.
 This shield was used in a robotics project for contactless navigation (see https://www.youtube.com/watch?v=rSrG_VnvrPk). 
+The hardware and software were jointly developed by Simon Harst and Stefan Brüwer.
 
 ## It features:
 * connection of up to 8 coils which emit and receive electromagnetical impulses
