@@ -9,7 +9,7 @@ The hardware and software were jointly developed by Simon Harst and Stefan Brüw
 * 24V connection with on-board conversion to 5V for the microcontroller
 * on-board CAN-Controller to connect the board to a CAN-bus
 * chaining possibility to connect two or more boards together for infinite extension
-* a ROS driver to use it in your robotics application: [www.github.com/sharst/metaldetector-ros](https://github.com/sharst/metaldetector-ros)
+* a ROS example to use it in your robotics application: [www.github.com/sharst/metaldetector-ros](https://github.com/sharst/metaldetector-ros)
 
 ## What you can do with it:
 * Contactlessly detect metal objects in the vicinity (distance depends on the coil and object used)
@@ -106,11 +106,11 @@ metaldetector-shield.ino: The main sketch for upload. Contains some interesting 
 Check out the loop-function in the main sketch. A loop consists of the following steps:
 * If coils are enabled, trigger each coil once and read out the results
 * we want to average over several measurements. coil.data_ready() goes to True as soon as we have collected this amount of measurements
-* In case some coil data is ready we will output it on the serial bus and send 4 messages of payload 5 to the CAN-bus, each encoding the values of two coils. They will each be in the format ```[coil_index, highbyte(coil1), lowbyte(coil1), highbyte(coil2), lowbyte(coil2)]```
+* In case some coil data is ready we will output it on the serial bus as a four-byte message, which will be in the format ```[40 (COIL_REGISTER set in board_v23.h), [0-7] (coil_index), highbyte(value), lowbyte(value)]```
 * The communication state is toggled so the next board can start measuring
 * We now sample the pressure sensors. If one of them transitions a threshold value, we encode this information bitwise. For instance, if pressure sensors 2 and 4 have surpassed the threshold value since the last call, get_bumper_transitions will output 0b00010100 (the second and fourth bit are True).
-* We now send out the string "BUMPER" on the serial bus. On the CAN-bus we will send the bitcoded value, this time in the format ```[25 (PRESSURE_REGISTER set in board_v23.h), highbyte(bitcode), lowbyte(bitcode), 0, 0]```.
-* We send out a heartbeat message on the CAN bus. This message contains the information on which ports some pressure sensors are connected and whether the metal sensing functionality is currently switched on. Which ports are currently connected to pressure sensors is again encoded bitwise, i.e. 0b10001001 means that there are sensors connected on the first, fourth and eigth connector on the board. A heartbeat message has the format ```[30 (HEARTBEAT_REGISTER set in board_v23.h), 0, bitwise encoding of connected sensors, 0, (1 or 0 whether coils are enabled)]```
+* We now send out the string "BUMPER" on the serial bus. On the CAN-bus we will send the bitcoded value, this time in the format ```[25 (PRESSURE_REGISTER set in board_v23.h), 0, highbyte(bitcode), lowbyte(bitcode)]```.
+* We send out a heartbeat message on the CAN bus. This message contains the information on which ports some pressure sensors are connected and whether the metal sensing functionality is currently switched on. Which ports are currently connected to pressure sensors is again encoded bitwise, i.e. 0b10001001 means that there are sensors connected on the first, fourth and eigth connector on the board. A heartbeat message has the format ```[30 (HEARTBEAT_REGISTER set in board_v23.h), bitwise encoding of connected sensors, (1 or 0 whether coils are enabled)]```
 
 #### Getting the CAN bus running
 * In order to interface with a CAN bus from a computer, you typically need a CAN to USB converter. We had some eccellent results with the [USBtin](https://www.fischl.de/usbtin/). It is open source, has a superb interface, a loving maintainer and can be ordered readily assembled.
