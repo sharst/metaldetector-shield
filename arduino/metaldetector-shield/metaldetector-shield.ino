@@ -32,7 +32,7 @@
 #define COMM_TIMEOUT              10000
 
 // Output raw ADC values of one coil, -1 to switch off
-#define DEBUG_RAW_ADC_COIL        0
+#define DEBUG_RAW_ADC_COIL        -1
 
 
 // Define a switchable debug print function
@@ -55,6 +55,7 @@ unsigned char tx_can_msg[5];
 INT8U rx_len = 0;
 unsigned char rx_can_msg[5];
 bool coils_enabled;
+unsigned int coil_value;
 
 Pressure pres = Pressure(pres_mux1, pres_mux2, pres_mux3);
 Coil coils = Coil(coil_select1, coil_select2, coil_select3, coil_adc_cs,
@@ -101,12 +102,11 @@ void toggle_out_state() {
 void send_heartbeat() {
   if ((millis() - last_heartbeat) > HEARTBEAT_EVERY) {
 
-    tx_can_msg[0] = HEARTBEAT_REGISTER;
-    tx_can_msg[1] = 0;
-    tx_can_msg[2] = pres.get_available_sensors();
-    tx_can_msg[3] = 0;
-    tx_can_msg[4] = coils_enabled;
-    byte ret = CAN0.sendMsgBuf(TX_CAN_ID, 1, 5, tx_can_msg);
+    unsigned char heartbeat_msg[3];
+    heartbeat_msg[0] = HEARTBEAT_REGISTER;
+    heartbeat_msg[1] = pres.get_available_sensors();
+    heartbeat_msg[2] = coils_enabled;
+    byte ret = CAN0.sendMsgBuf(TX_CAN_ID, 1, 3, heartbeat_msg);
 
     if (ret == CAN_OK) {
       DEBUG_PRINTLN("HEARTBEAT msg sent.");
@@ -172,7 +172,21 @@ void print_adc(void) {
   DEBUG_PRINTLN("!");
 }
 
-// Send a message on the can bus that encodes the two given values
+// Send a message about the coil values on the bus
+void send_value(int value_register, char identifier, int value) {
+    unsigned char message[4];
+    message[0] = value_register;
+    message[1] = identifier;
+    message[2] = value >> 8;
+    message[3] = value & 0xFF;
+
+    byte ret = CAN0.sendMsgBuf(TX_CAN_ID, 1, 4, message);
+    if (ret == CAN_OK) {
+      // DEBUG_PRINTLN("COIL msg sent.");
+    }
+}
+
+// Send a message on the can bus that encodes the given values
 void can_response_2_uint16(int index, int val1, int val2) {
   tx_can_msg[0] = index;
   tx_can_msg[1] = highByte(val1);
@@ -191,7 +205,7 @@ void handle_incoming_messages() {
     CAN0.readMsgBuf(&rx_len, rx_can_msg);
     INT32U canId = CAN0.getCanId();
 
-    if (canId == RX_CAN_ID && rx_len > 4)
+    if (canId == RX_CAN_ID)
       handle_request();
   }
 }
@@ -202,17 +216,14 @@ void handle_request() {
   bool is_write = ((reg & 0b10000000) > 0);
   reg &= 0b1111111;
 
-  DEBUG_PRINT("Handling request on register ");
-  DEBUG_PRINTLN(reg);
-
   unsigned char data[3];
   unsigned char flash_data[32];
 
   if (is_write) {
     if (reg == ENABLE_COILS_REGISTER) {
       DEBUG_PRINT("Received request to switch coils to: ");
-      DEBUG_PRINTLN(rx_can_msg[4]);
-      coils_enabled = (rx_can_msg[4] & 1) == 1;
+      DEBUG_PRINTLN(rx_can_msg[1]);
+      coils_enabled = (rx_can_msg[1] & 1) == 1;
     }
   } else {
     DEBUG_PRINT("Received read request for register ");
@@ -242,17 +253,14 @@ void loop() {
 
     coils.check_sensors();
     if (coils.data_ready()) {
-      DEBUG_PRINT("COILS");
-      for (int i = 0; i < COIL_AMOUNT; i += 2) {
-        unsigned int val1 = coils.get_average(i);
-        unsigned int val2 = coils.get_average(i + 1);
-        can_response_2_uint16(i + 1, val1, val2);
-        DEBUG_PRINT(" ");
-        DEBUG_PRINT(val1);
-        DEBUG_PRINT(" ");
-        DEBUG_PRINT(val2);
+      // DEBUG_PRINT("COILS");
+      for (int i = 0; i < COIL_AMOUNT; i++) {
+        coil_value = coils.get_average(i);
+        // DEBUG_PRINT(" ");
+        // DEBUG_PRINT(coil_value);
+        send_value(COIL_REGISTER, i, coil_value);
       }
-      DEBUG_PRINTLN("");
+      //DEBUG_PRINTLN("");
     }
     toggle_out_state();
   }
@@ -265,7 +273,7 @@ void loop() {
     int trans = pres.get_bumper_transitions();
 
     if (trans > 0) {
-      can_response_2_uint16(PRESSURE_REGISTER, trans, 0);
+      send_value(PRESSURE_REGISTER, 0, trans);
       DEBUG_PRINTLN("BUMPER");
     }
     delay(1);
