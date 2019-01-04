@@ -1,6 +1,5 @@
 #ifndef boarddef23_h
 #define boarddef23_h 
-static const byte IS_MASTER = 2;  // 0: NO master, 1: IS master, 2: read out hardware switch
 
 // Pressure sensor
 #define pres_mux1            8
@@ -27,5 +26,6 @@ static const byte IS_MASTER = 2;  // 0: NO master, 1: IS master, 2: read out har
 #define comm_out             A0
 #define LEDPin               13
 #define master_pin           2
+
 
 #endif

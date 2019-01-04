@@ -24,8 +24,6 @@
 #define TX_CAN_ID                 61
 #define RX_CAN_ID                 62
 
-#define IS_MASTER                 true
-
 // Toggle all debug output on the serial port
 #define DEBUG                     true
 
@@ -57,6 +55,8 @@ unsigned char rx_can_msg[5];
 bool coils_enabled;
 unsigned int coil_value;
 
+byte is_master = 2;  // 0: NO master, 1: IS master, 2: read out hardware switch
+
 Pressure pres = Pressure(pres_mux1, pres_mux2, pres_mux3);
 Coil coils = Coil(coil_select1, coil_select2, coil_select3, coil_adc_cs,
     coil_trigger);
@@ -69,7 +69,7 @@ bool chain_interrupt_received() {
 
   byte in = digitalRead(comm_in);
   if (in == comm_in_state) {
-    if (IS_MASTER && ((millis() - start_waiting) > COMM_TIMEOUT)) {
+    if (is_master && ((millis() - start_waiting) > COMM_TIMEOUT)) {
       DEBUG_PRINTLN("Connection timeout!");
       start_waiting = 0;
       return true;
@@ -119,9 +119,13 @@ void setup() {
   // Setup chaining pins
   pinMode(comm_in, INPUT_PULLUP);
   pinMode(comm_out, OUTPUT);
+  pinMode(master_pin, INPUT_PULLUP);
   digitalWrite(comm_out, comm_out_state);
   delay(2); // Give pin some ms to settle
   comm_in_state = digitalRead(comm_in);
+
+  if (is_master == 2)
+    is_master = !digitalRead(master_pin);
 
   Serial.begin(115200);
   pinMode(LEDPin, OUTPUT);
@@ -149,8 +153,11 @@ void setup() {
   // Setup coils
   coils.setup();
 
+  DEBUG_PRINT("Is this board is configured as master: ");
+  DEBUG_PRINTLN(is_master);
+
   // Wait for master to finish first measurement
-  if (!IS_MASTER) {
+  if (!is_master) {
     while (!chain_interrupt_received())
       delay(1);
     DEBUG_PRINTLN("Received very first interrupt as slave.");
