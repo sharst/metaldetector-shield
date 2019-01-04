@@ -31,7 +31,7 @@
 
 // Output raw ADC values of one coil, -1 to switch off
 #define DEBUG_RAW_ADC_COIL        -1
-
+#define DEBUG_RAW_PRESSURE        -1
 
 // Define a switchable debug print function
 #ifdef DEBUG
@@ -54,6 +54,7 @@ INT8U rx_len = 0;
 unsigned char rx_can_msg[5];
 bool coils_enabled;
 unsigned int coil_value;
+long raw_pressure = -1;
 
 byte is_master = 2;  // 0: NO master, 1: IS master, 2: read out hardware switch
 
@@ -91,13 +92,11 @@ void toggle_out_state() {
 
 /* Call this function periodically and it will emit a heartbeat message
  * at most every HEARTBEAT_EVERY milliseconds.
- * The heartbeat message is 5 byte long and consists of
+ * The heartbeat message is 3 byte long and consists of
  * BYTE #     DESCRIPTION
  * 0          HEARTBEAT_REGISTER
- * 1          0 (nothing)
- * 2          number of pressure sensors attached
- * 3          0 (nothing)
- * 4          [0 or 1], whether coils are enabled
+ * 1          number of pressure sensors attached
+ * 2          [0 or 1], whether coils are enabled
  */
 void send_heartbeat() {
   if ((millis() - last_heartbeat) > HEARTBEAT_EVERY) {
@@ -167,7 +166,7 @@ void setup() {
 }
 
 // Debug function to print the individual ADC values of the last measurements
-void print_adc(void) {
+void print_adc() {
   DEBUG_PRINT("# ");
   for (int i = 0; i < 40; i++) {
     unsigned int adc_val = coils.get_adc(i);
@@ -275,6 +274,14 @@ void loop() {
   do {
     // Update all of the available sensors
     pres.check_sensors();
+
+    if (DEBUG_RAW_PRESSURE > -1) {
+      raw_pressure = pres.get_raw(DEBUG_RAW_PRESSURE, true);
+      if (raw_pressure > -1) {
+        DEBUG_PRINT("RAWPRESSURE ");
+        DEBUG_PRINTLN(raw_pressure);
+      }
+    }
 
     // Find out which bumpers have transitioned.
     int trans = pres.get_bumper_transitions();
