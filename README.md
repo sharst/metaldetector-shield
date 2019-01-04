@@ -101,6 +101,8 @@ metaldetector-shield.ino: The main sketch for upload. Contains some interesting 
   * COMM_TIMEOUT: How many ms to wait for a signal from the slave board in chaining mode
   * DEBUG_RAW_ADC_COIL: Only works when DEBUG==true. This will output the raw measurements of the given coil as sampled by the ADC. Run python plot_raw_coil.py to visualize these values. This is a sample output where we approach a metal object to the coil:
 ![Raw output of ADC values](https://github.com/sharst/metaldetector-shield/blob/master/images/coil_response.gif)
+  * DEBUG_RAW_PRESSURE: Only works when DEBUG==true. This will output the raw measurements of the given pressure sensor. Run python plot_raw_pressure.py to visualize these values. This is a sample output where we register several bumper hits on the given pressure sensor. In red are detected collisions.
+  ![Raw output of pressure values](https://github.com/sharst/metaldetector-shield/blob/master/images/pressure_response.gif)
 
 #### Typical operation mode
 Check out the loop-function in the main sketch. A loop consists of the following steps:
